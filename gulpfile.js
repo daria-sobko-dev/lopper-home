@@ -77,8 +77,9 @@ async function images() {
 }
 
 // ---- Fonts ----
-function fonts() {
-    return src(paths.fonts, { encoding: false })
+function fonts(done) {
+    if (!fs.existsSync('src/fonts')) return done();
+    return src(paths.fonts, { encoding: false, allowEmpty: true })
         .pipe(dest(paths.dest + '/fonts'));
 }
 

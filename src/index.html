@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio — Lopper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800;900&family=Noticia+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800;900&family=Noticia+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="page">
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="nav__logo">Studio</a>
+                <div class="nav__body">
+                    <ul class="nav__list">
+                        <li><a href="#" class="nav__link nav__link--active">Home</a></li>
+                        <li><a href="#" class="nav__link">Services</a></li>
+                        <li><a href="#" class="nav__link">Work</a></li>
+                        <li><a href="#" class="nav__link">About</a></li>
+                    </ul>
+                    <div class="nav__right">
+                        <div class="nav__phone">
+                            <img class="nav__phone-icon" src="img/phone-icon.svg" alt="" width="18" height="29">
+                            <span>(01) 666 - 693 - 456</span>
+                        </div>
+                        <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                            <span></span>
+                            <span></span>
+                            <span class="nav__hamburger-short"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero-section">
+        <div class="hero-section__photo">
+            <picture>
+                <source srcset="img/header-bg-1.webp" type="image/webp">
+                <img class="hero-section__bg-img" src="img/header-bg-1.jpg" alt="" width="1440" height="828">
+            </picture>
+        </div>
+
+        <div class="container">
+            <div class="hero">
+                <p class="label label--white">What we do?</p>
+                <h1 class="hero__title">
+                    We grow<br>
+                    <span class="hero__title-pink">great business</span>
+                </h1>
+            </div>
+
+            <div class="subheader">
+                <p class="subheader__text">Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.</p>
+                <button class="subheader__btn" aria-label="Learn more">
+                    <img src="img/arrow-subheader.svg" alt="" width="48" height="48">
+                </button>
+            </div>
+
+            <a href="#intro" class="scroll-hint">
+                <span class="scroll-hint__text">Scroll to see more</span>
+                <img class="scroll-hint__icon" src="img/scroll-icon.svg" alt="" width="21" height="46">
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== INTRO ===== -->
+    <section class="intro" id="intro">
+        <div class="container">
+            <div class="intro__left">
+                <p class="label">Intro</p>
+                <h2 class="intro__title">Our future</h2>
+                <p class="intro__lead">
+                    Apparently we had reached a great height in the atmosphere, for the sky was a dead
+                    black, and the stars had ceased to twinkle.
+                </p>
+                <p class="intro__body">
+                    By the same illusion which lifts the horizon of the sea to the level of the spectator
+                    on a hillside, the sable cloud beneath was dished out, and the car seemed to float in
+                    the middle of an immense dark sphere, whose upper half was strewn with silver.
+                </p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+            <div class="intro__right">
+                <div class="intro__dark-outer"></div>
+                <picture>
+                    <source srcset="img/intro-photo.webp" type="image/webp">
+                    <img class="intro__photo" src="img/intro-photo.jpg" alt="Person" width="460" height="738" loading="lazy">
+                </picture>
+                <div class="intro__quote-box">
+                    <img class="intro__qmark intro__qmark--open" src="img/quote-open.svg" alt="" width="60" height="60">
+                    <blockquote class="intro__quote">
+                        Commodo sed egestas egestas fringilla phasellus faucibus.
+                    </blockquote>
+                    <img class="intro__qmark intro__qmark--close" src="img/quote-close.svg" alt="" width="60" height="60">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="features">
+        <div class="container features__content">
+            <div class="features__dark-panel">
+                <picture>
+                    <source srcset="img/features-texture.webp" type="image/webp">
+                    <img class="features__texture" src="img/features-texture.jpg" alt="" width="999" height="1008" loading="lazy">
+                </picture>
+                <div class="features__grad"></div>
+            </div>
+            <div class="features__left">
+                <p class="label">Benefits</p>
+                <h2 class="features__title">Shaping the future</h2>
+                <p class="features__lead">
+                    Eget nunc scelerisque viverra mauris in aliquam. Dignissim sodales ut eu sem
+                    integer vitae. Libero nunc consequat interdum varius.
+                </p>
+                <div class="features__body">
+                    <p>Magna sit amet purus gravida. Sit amet porttitor eget dolor morbi non.</p>
+                    <p>Lectus vestibulum mattis ullamcorper velit sed ullamcorper.</p>
+                    <p>Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Dui faucibus
+                        in ornare quam viverra.</p>
+                    <p>Posuere ac ut consequat semper viverra.</p>
+                </div>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+            <div class="features__right">
+                <div class="features__photo-outer">
+                    <div class="swiper features__slider" id="features-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture><source srcset="img/features-photo.webp" type="image/webp"><img class="features__photo" src="img/features-photo.jpg" alt="Mobile Apps" width="460" height="612" loading="lazy"></picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture><source srcset="img/features-photo.webp" type="image/webp"><img class="features__photo" src="img/features-photo.jpg" alt="Web Apps" width="460" height="612" loading="lazy"></picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture><source srcset="img/features-photo.webp" type="image/webp"><img class="features__photo" src="img/features-photo.jpg" alt="Design" width="460" height="612" loading="lazy"></picture>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="features__photo-label">Mobile Apps</span>
+                </div>
+                <div class="features__nav">
+                    <span class="features__count">1/3</span>
+                    <img class="features__arr" id="features-prev" src="img/arrow-left.svg" alt="Previous" role="button" tabindex="0" width="27" height="27">
+                    <img class="features__arr" id="features-next" src="img/arrow-right.svg" alt="Next" role="button" tabindex="0" width="27" height="27">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="newsletter__title">Subscribe to our newsletter</h2>
+            <p class="newsletter__sub">Cras pulvinar mattis nunc sed blandit.</p>
+            <form class="newsletter__form" action="#">
+                <div class="newsletter__field">
+                    <label for="email" class="sr-only">Email address</label>
+                    <input type="email" id="email" class="newsletter__input" placeholder="Enter email">
+                    <div class="newsletter__sep"></div>
+                    <button type="submit" class="newsletter__btn">
+                        Subscribe
+                        <img class="newsletter__arrow" src="img/arrow-newsletter.svg" alt="" width="27" height="27">
+                    </button>
+                </div>
+            </form>
+            <div class="newsletter__rule"></div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <h3 class="footer__logo">Lopper</h3>
+                <p class="footer__tagline">Eu augue ut lectus arcu bibendum at.</p>
+            </div>
+
+            <div class="footer__col footer__col--menu">
+                <h4 class="footer__col-title">Menu</h4>
+                <ul class="footer__list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Servces</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col footer__col--services">
+                <h4 class="footer__col-title">Services</h4>
+                <ul class="footer__list">
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Ipsum</a></li>
+                    <li><a href="#">Dolor</a></li>
+                    <li><a href="#">Sit Amet</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col footer__col--contact">
+                <h4 class="footer__col-title">Contact us</h4>
+                <div class="footer__contacts">
+                    <p class="footer__contact-item">
+                        <img class="footer__contact-icon" src="img/contact-email.svg" alt="" width="12" height="9">
+                        contact@lop.com
+                    </p>
+                    <p class="footer__contact-item">
+                        <img class="footer__contact-icon" src="img/contact-phone.svg" alt="" width="9" height="13">
+                        856 - 693 - 456
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer__col footer__col--follow">
+                <h4 class="footer__col-title">Follow us</h4>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><img src="img/social-twitter.svg" alt="Twitter" width="18" height="18"></a>
+                    <a href="#" class="footer__social-link"><img src="img/social-facebook.svg" alt="Facebook" width="18" height="18"></a>
+                    <a href="#" class="footer__social-link"><img src="img/social-medium.svg" alt="Medium" width="18" height="18"></a>
+                    <a href="#" class="footer__social-link"><img src="img/social-instagram.svg" alt="Instagram" width="18" height="18"></a>
+                    <a href="#" class="footer__social-link"><img src="img/social-youtube.svg" alt="YouTube" width="18" height="18"></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&copy; 2019 Lopper by mariuszdaniel. All right reserved.</p>
+        </div>
+    </footer>
+
+</div>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation" aria-hidden="true">
+    <nav>
+        <ul class="mobile-menu__list">
+            <li><a href="#" class="mobile-menu__link mobile-menu__link--active">Home</a></li>
+            <li><a href="#" class="mobile-menu__link">Services</a></li>
+            <li><a href="#" class="mobile-menu__link">Work</a></li>
+            <li><a href="#" class="mobile-menu__link">About</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-menu__bottom">
+        <a href="tel:016666934456" class="mobile-menu__phone">(01) 666 - 693 - 456</a>
+        <div class="mobile-menu__social">
+            <a href="#"><img src="img/social-twitter.svg" alt="Twitter" width="18" height="18"></a>
+            <a href="#"><img src="img/social-facebook.svg" alt="Facebook" width="18" height="18"></a>
+            <a href="#"><img src="img/social-medium.svg" alt="Medium" width="18" height="18"></a>
+            <a href="#"><img src="img/social-instagram.svg" alt="Instagram" width="18" height="18"></a>
+            <a href="#"><img src="img/social-youtube.svg" alt="YouTube" width="18" height="18"></a>
+        </div>
+    </div>
+</div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@use '../base/variables' as *;
+
+// =============================================
+// MOBILE MENU
+// =============================================
+
+body.menu-open {
+    overflow: hidden;
+    .header { z-index: 100; }
+}
+
+.mobile-menu {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background: var(--color-s300);
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 120px max(var(--margin), calc((100% - 1173px) / 2)) 60px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    transition:
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.35s ease,
+        visibility 0s linear 0.4s;
+
+    &.is-open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+        transition:
+            transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.35s ease,
+            visibility 0s linear 0s;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        li {
+            opacity: 0;
+            transform: translateX(24px);
+            transition: opacity 0.35s ease, transform 0.35s ease;
+        }
+    }
+
+    &.is-open &__list {
+        li:nth-child(1) { transition-delay: 0.08s; opacity: 1; transform: none; }
+        li:nth-child(2) { transition-delay: 0.14s; opacity: 1; transform: none; }
+        li:nth-child(3) { transition-delay: 0.20s; opacity: 1; transform: none; }
+        li:nth-child(4) { transition-delay: 0.26s; opacity: 1; transform: none; }
+    }
+
+    &__link {
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: var(--color-white);
+        opacity: 0.6;
+        line-height: 100%;
+        display: inline-block;
+        transition: opacity 0.2s, color 0.2s;
+
+        &--active { opacity: 1; color: var(--color-primary); }
+        &:hover   { opacity: 1; }
+
+        @include media(mobile) { font-size: 28px; }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__phone {
+        font-size: 14.4px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        color: var(--color-white);
+        opacity: 0.7;
+        line-height: 140%;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+
+        img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.7;
+        }
+    }
+
+    @include media(mobile) { padding: 100px 20px 48px; }
+}

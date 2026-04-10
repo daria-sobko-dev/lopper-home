@@ -1,0 +1,29 @@
+// =============================================
+// BUTTON
+// =============================================
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    height: 45px;
+    padding: 0 45px;
+    background: var(--color-primary);
+    border-radius: 36px;
+    border: none;
+    color: var(--color-white);
+    font-family: var(--font-main);
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        background: #d40d58;
+        transform: translateY(-2px);
+    }
+}

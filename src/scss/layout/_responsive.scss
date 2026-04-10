@@ -1,0 +1,22 @@
+@use '../base/variables' as *;
+
+// =============================================
+// GLOBAL RESPONSIVE OVERRIDES
+// Only layout-level changes that don't belong to a single section
+// =============================================
+
+@include media(desktop) {
+    :root { --margin: 73px; }
+}
+
+@include media(tablet) {
+    :root { --margin: 40px; }
+}
+
+@include media(mobile) {
+    :root { --margin: 20px; }
+}
+
+@include media(mobile-sm) {
+    :root { --margin: 16px; }
+}

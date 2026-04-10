@@ -1,0 +1,43 @@
+// =============================================
+// VARIABLES & CUSTOM PROPERTIES
+// =============================================
+
+@use 'sass:map';
+
+// --- Breakpoints ---
+$breakpoints: (
+    desktop-lg: 1440px,
+    desktop:    1200px,
+    tablet:     1024px,
+    mobile:     768px,
+    mobile-sm:  375px,
+);
+
+@mixin media($bp) {
+    @media (max-width: map.get($breakpoints, $bp)) {
+        @content;
+    }
+}
+
+// --- CSS Custom Properties ---
+:root {
+    // Colors
+    --color-primary:   #F61067;
+    --color-s100:      #5E239D;
+    --color-s300:      #30124E;
+    --color-s400:      #150433;
+    --color-white:     #FCFCFC;
+    --color-lightgrey: #F4F4ED;
+    --color-textgrey:  #9B94A3;
+    --color-textmain:  #776C82;
+    --color-headers:   #30233D;
+
+    // Fonts
+    --font-main:  'M PLUS 1p', sans-serif;
+    --font-quote: 'Noticia Text', serif;
+
+    // Layout
+    --page-w:  1186px;
+    --margin:  20px;
+    --edge-offset: calc(var(--margin) + max(0px, (100vw - var(--page-w)) / 2));
+}

@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lopper Studio — We grow great business. Digital agency offering web design, development, and branding services.">
     <title>Studio — Lopper</title>
+    <link rel="preload" as="image" href="img/header-bg-1.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800;900&family=Noticia+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800;900&family=Noticia+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800;900&family=Noticia+Text:ital@1&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800;900&family=Noticia+Text:ital@1&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/swiper.min.css"></noscript>
 </head>
 <body>
 <div class="page">
@@ -47,7 +50,7 @@
         <div class="hero-section__photo">
             <picture>
                 <source srcset="img/header-bg-1.webp" type="image/webp">
-                <img class="hero-section__bg-img" src="img/header-bg-1.jpg" alt="" width="1440" height="828">
+                <img class="hero-section__bg-img" src="img/header-bg-1.jpg" alt="" width="1440" height="828" fetchpriority="high">
             </picture>
         </div>
 
@@ -263,7 +266,7 @@
     </div>
 </div>
 
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/swiper.min.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

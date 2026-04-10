@@ -83,15 +83,15 @@ function fonts(done) {
         .pipe(dest(paths.dest + '/fonts'));
 }
 
-// ---- Swiper CSS (from node_modules) ----
+// ---- Swiper CSS (core only) ----
 function vendorCSS() {
-    return src('node_modules/swiper/swiper-bundle.min.css')
+    return src('node_modules/swiper/swiper.min.css')
         .pipe(dest(paths.dest + '/css'));
 }
 
-// ---- Swiper JS (from node_modules) ----
+// ---- Swiper JS (core only) ----
 function vendorJS() {
-    return src('node_modules/swiper/swiper-bundle.min.js')
+    return src('node_modules/swiper/swiper.min.js')
         .pipe(dest(paths.dest + '/js'));
 }
 
